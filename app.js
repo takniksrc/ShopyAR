@@ -52,12 +52,12 @@ class App{
 
 			navigator.xr.isSessionSupported( 'immersive-ar' ).then( ( supported ) => {
 
-                if (supported){
+               // if (supported){
                     const collection = document.getElementsByClassName("ar-button");
                     [...collection].forEach( el => {
                         el.style.display = 'block';
                     });
-                }
+                //}
 			} );
             
 		} 
