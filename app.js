@@ -1,8 +1,8 @@
-import * as THREE from '../../libs/three125/three.module.js';
-import { GLTFLoader } from '../../libs/three/jsm/GLTFLoader.js';
-import { RGBELoader } from '../../libs/three/jsm/RGBELoader.js';
-import { ARButton } from '../../libs/ARButton.js';
-import { LoadingBar } from '../../libs/LoadingBar.js';
+import * as THREE from '/blob/main/libs/three125/three.module.js';
+import { GLTFLoader } from '/blob/main/libs/three/jsm/GLTFLoader.js';
+import { RGBELoader } from '/blob/main/libs/three/jsm/RGBELoader.js';
+import { ARButton } from '/blob/main/libs/ARButton.js';
+import { LoadingBar } from '/blob/main/libs/LoadingBar.js';
 
 class App{
 	constructor(){
@@ -12,7 +12,7 @@ class App{
         this.loadingBar = new LoadingBar();
         this.loadingBar.visible = false;
 
-		this.assetsPath = '../../assets/ar-shop/';
+		this.assetsPath = '/blob/main/assets/ar-shop/';
         
 		this.camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 20 );
 		this.camera.position.set( 0, 1.6, 0 );
